@@ -9,13 +9,12 @@ export function Sidebar() {
       <Surface className="flex flex-col items-center gap-4 p-6 text-center">
         <div className="relative h-28 w-28 overflow-hidden rounded-full border-4 border-white shadow-lg">
           <Image
-            src="/assets/avatar.svg"
+            src="/assets/pic.png"
             alt={profile.photoAlt}
             fill
             sizes="112px"
             className="object-cover"
             priority
-            unoptimized
           />
         </div>
         <div>
