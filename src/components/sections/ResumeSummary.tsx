@@ -1,10 +1,10 @@
 import { Section, SectionHeading, Surface, Btn } from "@/components/ui";
-import { profile } from "@/lib/content";
+import { profile, professionalSummary } from "@/lib/content";
 
 const highlights = [
-  "Times Internet experience across fintech, publishing, and AI-assisted product initiatives.",
-  "Strong track record in React development, Next.js migration work, Node.js API collaboration, and production delivery.",
-  "Comfortable leading frontend systems, collaborating with stakeholders, and improving maintainability over time.",
+  "7+ years as sole technical owner of The Economic Times' publisher monetization stack, serving 340M+ monthly views.",
+  "Deep hands-on expertise with GAM/DFP, Prebid.js, Amazon Publisher Services, and Header Bidding.",
+  "Proven track record leading large-scale Next.js migrations and mentoring frontend engineering teams.",
 ];
 
 export function ResumeSummary() {
@@ -14,11 +14,7 @@ export function ResumeSummary() {
       <div className="grid gap-4 sm:grid-cols-2">
         <Surface className="p-6">
           <h3 className="font-semibold">Professional Summary</h3>
-          <p className="mt-2 text-sm text-muted">
-            Immediate Joiner and Senior Frontend Engineer with 13+ years of experience building
-            React.js, Next.js, TypeScript, and Node.js applications for enterprise, fintech, and
-            AI-assisted products.
-          </p>
+          <p className="mt-2 text-sm text-muted">{professionalSummary}</p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Btn href={profile.resumeFile} variant="primary" download>
               Download Resume

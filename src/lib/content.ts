@@ -1,10 +1,10 @@
 export const profile = {
   name: "Priyabrata Bera",
   initials: "PB",
-  title: "Senior Frontend Engineer | Immediate Joiner",
-  tagline: "Immediate Joiner | React.js | Next.js | TypeScript | Node.js",
+  title: "Staff Software Engineer | Frontend Tech Lead",
+  tagline: "React.js · Next.js · TypeScript · Node.js · Ad Tech & Monetization",
   summary:
-    "Immediate Joiner with 13+ years of experience building scalable enterprise applications, AI-powered tools, SEO-friendly web platforms, and high-performance frontend systems.",
+    "Frontend Tech Lead with 15+ years of experience architecting scalable web applications, and 7+ years as sole technical owner of a publisher monetization ecosystem serving 340M+ monthly views.",
   photoAlt: "Priyabrata Bera profile photo",
   email: "priyabrata.bera@gmail.com",
   phoneDisplay: "+91 9158617600",
@@ -13,8 +13,11 @@ export const profile = {
   location: "Noida, India",
   linkedin: "https://www.linkedin.com/in/priyabrata-bera-6501b019/",
   github: "https://github.com/priyabratabera",
-  resumeFile: "/priyabratafile/Priyabrata_Bera_Resume_Reactjs_Nextjs_Developer.pdf",
+  resumeFile: "/assets/Priyabrata_Bera_Resume_Optimized_v2.pdf",
 } as const;
+
+export const professionalSummary =
+  "Frontend Tech Lead with 15+ years of experience architecting and delivering scalable, high-performance web applications using React.js, Next.js, TypeScript, JavaScript, and Node.js. 7+ years as sole technical owner of a publisher monetization ecosystem serving 340M+ monthly views, driving ad tech strategy across Desktop Web, Mobile Web, and AMP through Google Ad Manager (GAM/DFP), Prebid.js, Amazon Publisher Services (APS), and Header Bidding. Proven track record leading large-scale Next.js migrations, mentoring engineering teams, and integrating AI-assisted development tools (ChatGPT, Claude, Cursor, Codex) to accelerate delivery. Strong focus on Core Web Vitals, SSR, REST API architecture, and revenue-driving ad optimization.";
 
 export const navLinks = [
   { href: "/", label: "Home" },
@@ -33,247 +36,312 @@ export const socialLinks = [
 ] as const;
 
 export const heroStats = [
-  { value: "13+", label: "Years Experience" },
-  { value: "50+", label: "Projects" },
-  { value: "100+", label: "Production Releases" },
-  { value: "Expert", label: "React / Next.js" },
+  { value: "15+", label: "Years Experience" },
+  { value: "340M+", label: "Monthly Views" },
+  { value: "90-110M", label: "Monthly Visits" },
+  { value: "7+", label: "Yrs Ad Tech Ownership" },
 ] as const;
 
 export const aboutHighlights = [
-  "Senior frontend engineer at Times Internet delivering React and Next.js products for high-traffic financial platforms.",
-  "Hands-on with frontend architecture, modular component systems, reusable design patterns, and maintainable engineering workflows.",
-  "Led and supported Next.js migrations focused on SEO, SSR, performance, and cleaner release velocity for business-critical properties.",
-  "Built React interfaces and Node.js APIs for AI-assisted experiences, market intelligence tools, publishing flows, and conversion-focused web products.",
-  "Strong focus on Core Web Vitals, accessibility, search visibility, analytics-friendly implementation, and long-term maintainability.",
-  "Uses ChatGPT, Cursor AI, GitHub Copilot, Claude, and prompt engineering workflows to accelerate delivery while keeping code quality high.",
+  "Sole technical owner of a publisher monetization stack serving 340M+ monthly views across Desktop Web, Mobile Web, and AMP.",
+  "Deep expertise in Google Ad Manager (GAM/DFP), Prebid.js, Amazon Publisher Services (APS), and Header Bidding strategy.",
+  "Led large-scale frontend migrations to React.js, Next.js, and TypeScript, improving Core Web Vitals across flagship products.",
+  "Designed a centralized ad configuration platform deployed across 8 repositories, standardizing implementation for new properties.",
+  "Migrated legacy XSLT applications to modern Next.js architecture, improving accessibility, maintainability, and performance.",
+  "Mentors frontend engineers and integrates AI-assisted tools (Claude, ChatGPT, Cursor, Codex) to accelerate delivery.",
 ] as const;
+
+export const adTech = {
+  copy:
+    "As sole technical owner of The Economic Times' publisher monetization stack, I architect ad solutions across Desktop Web, Mobile Web, and AMP — driving header bidding strategy, yield optimization, and platform standardization across 8 repositories.",
+  stats: [
+    { value: "340M+", label: "Monthly Views" },
+    { value: "90-110M", label: "Monthly Visits" },
+    { value: "8", label: "Repos Standardized" },
+    { value: "7+", label: "Years Ownership" },
+  ],
+  tools: [
+    "Google Ad Manager (GAM/DFP)",
+    "Prebid.js",
+    "Amazon Publisher Services (APS)",
+    "Header Bidding",
+    "Taboola",
+    "VDO.AI",
+    "Magnite",
+    "Columbia Ad Platform",
+  ],
+} as const;
 
 export const skillGroups = [
   {
     title: "Frontend",
-    skills: ["React.js", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "SCSS", "Tailwind CSS"],
+    skills: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+/ES5)", "Redux", "HTML5", "CSS3", "jQuery"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "REST APIs", "MySQL", "MongoDB"],
+    title: "Backend / API",
+    skills: ["Node.js", "REST APIs", "JWT Authentication", "Axios", "JSON", "MongoDB"],
   },
   {
-    title: "DevOps & Cloud",
-    skills: ["AWS EC2", "PM2", "Nginx", "Vercel", "Railway"],
+    title: "Ad Tech & Monetization",
+    skills: [
+      "Google Ad Manager (GAM/DFP)",
+      "Prebid.js",
+      "Amazon Publisher Services (APS)",
+      "Header Bidding",
+      "Taboola",
+      "VDO.AI",
+      "Magnite",
+    ],
   },
   {
-    title: "Tools",
-    skills: ["Git", "Jira", "Postman", "Chrome DevTools", "Lighthouse"],
+    title: "Performance & SEO",
+    skills: ["Core Web Vitals", "Lighthouse", "Google Search Console", "Chrome DevTools", "SSR"],
   },
   {
-    title: "AI Tools",
-    skills: ["ChatGPT", "Cursor AI", "GitHub Copilot", "Claude", "Prompt Engineering"],
+    title: "Cloud & DevOps",
+    skills: ["AWS (S3)", "Linode (Akamai Cloud)", "Git", "GitHub", "Bitbucket", "Jenkins", "Webpack", "Babel"],
+  },
+  {
+    title: "AI-Assisted Development",
+    skills: ["Claude", "ChatGPT", "Cursor", "Codex"],
   },
 ] as const;
 
 export const projects = [
   {
     tag: "Featured",
-    title: "ET Markets GPT",
+    title: "Publisher Ad Configuration Platform",
     description:
-      "AI-assisted market intelligence experience helping users explore financial signals, summaries, and content faster.",
-    stack: ["Next.js", "React", "Node.js", "AI Workflows"],
-    role: "Senior Frontend Engineer",
-    impact: "Helped shape a modern AI product experience for finance-focused audiences.",
+      "Centralized ad configuration management platform standardizing monetization implementation across 8 repositories for The Economic Times.",
+    stack: ["Next.js", "React.js", "Node.js", "GAM/DFP"],
+    role: "Tech Lead – Sole Technical Owner",
+    impact: "Cut integration time for new properties and standardized ad implementation across flagship products.",
   },
   {
     tag: "Featured",
-    title: "AI Stock Screener",
+    title: "ET Ad Management Panel",
     description:
-      "Interactive screening interface for stock discovery with responsive filters, data-driven UI, and scalable component design.",
-    stack: ["React", "Next.js", "TypeScript", "REST APIs"],
-    role: "Frontend Architecture, UI Engineering",
-    impact: "Improved discovery speed and clarity for complex stock research workflows.",
+      "Self-serve admin panel giving business teams control over configurable ad placements and monetization rules.",
+    stack: ["Next.js", "React.js", "Node.js"],
+    role: "Tech Lead",
+    impact: "Removed engineering dependency for day-to-day ad configuration changes.",
   },
   {
     tag: "Project",
-    title: "ET Markets Watchlist",
-    description:
-      "Personalized watchlist product with real-time friendly interaction patterns and mobile-first usability.",
-    stack: ["React", "JavaScript", "API Integration"],
-    role: "Senior Frontend Engineer",
-    impact: "Supported repeat engagement through streamlined portfolio tracking UX.",
+    title: "IPO Management Panel",
+    description: "Internal panel for managing IPO-related content and data across Economic Times properties.",
+    stack: ["Next.js", "React.js"],
+    role: "Tech Lead",
+    impact: "Streamlined business-team publishing workflows for time-sensitive IPO content.",
   },
   {
     tag: "Project",
-    title: "Mutual Funds Platform",
-    description:
-      "SEO-aware investment platform experiences designed for content depth, discoverability, and conversion-friendly navigation.",
-    stack: ["Next.js", "SSR", "SEO", "Performance"],
-    role: "Frontend Lead",
-    impact: "Strengthened search visibility and improved page performance on key journeys.",
+    title: "Subscription Management Panel",
+    description: "Admin tool for configuring and managing subscription data and access rules.",
+    stack: ["Next.js", "React.js", "Node.js"],
+    role: "Tech Lead",
+    impact: "Gave business teams self-serve control over subscription configuration.",
   },
   {
     tag: "Project",
-    title: "Bank Holidays Migration",
+    title: "XSLT to Next.js Migration",
     description:
-      "Migration initiative modernizing legacy pages into a faster, cleaner, search-friendly frontend stack.",
-    stack: ["Next.js", "Migration", "SSR"],
-    role: "Migration Engineer",
-    impact: "Reduced maintenance overhead while improving consistency and SEO readiness.",
+      "Large-scale migration of legacy XSLT applications to a modern Next.js architecture across flagship Economic Times products.",
+    stack: ["Next.js", "SSR", "Migration"],
+    role: "Tech Lead",
+    impact: "Improved accessibility, maintainability, and Core Web Vitals scores.",
   },
   {
     tag: "Project",
-    title: "Company Page Revamp",
-    description:
-      "Redesigned company information pages with better performance, stronger content hierarchy, and modern responsive layouts.",
-    stack: ["React", "Next.js", "CSS", "SEO"],
-    role: "Frontend Engineer",
-    impact: "Delivered a more professional presentation for business and search audiences.",
+    title: "FedEx Print Online",
+    description: "Enterprise document printing, customization, and order management platform built at Infogain.",
+    stack: ["React.js", "JavaScript", "CanJS", "AJAX"],
+    role: "Sr. Consultant",
+    impact: "Delivered scalable printing and order management capabilities for a global enterprise customer.",
   },
 ] as const;
 
 export const caseStudies = [
   {
-    title: "ET Markets GPT",
+    title: "Publisher Monetization Ecosystem",
     problem:
-      "Financial users needed faster access to contextual insights without digging through multiple content surfaces.",
+      "Ad implementation across Desktop Web, Mobile Web, and AMP was inconsistent, slow to extend to new properties, and lacked a single technical owner.",
     solution:
-      "Built a structured AI-first experience with reusable React components, content hierarchy, and scalable frontend patterns.",
-    stack: ["Next.js", "React", "Node.js", "AI-assisted UX"],
-    role: "Senior Frontend Engineer",
+      "Took sole technical ownership of the monetization stack and built a centralized ad configuration platform deployed across 8 repositories using Next.js, React.js, and Node.js.",
+    stack: ["Next.js", "React.js", "Node.js", "GAM/DFP", "Prebid.js", "APS"],
+    role: "Tech Lead – Sole Technical Owner",
     features: [
-      "AI-assisted discovery flows",
-      "Modular UI patterns",
-      "Performance-aware rendering",
-      "Responsive interaction design",
+      "Header Bidding via Prebid.js and APS",
+      "Centralized ad configuration platform",
+      "Cross-property standardization",
+      "Desktop, Mobile Web, and AMP support",
     ],
-    impact: "Improved usability for insight-heavy workflows and created a stronger foundation for future AI features.",
+    impact: "Sustained monetization for 340M+ monthly views and 90-110M monthly visits with faster rollout to new properties.",
   },
   {
-    title: "AI Stock Screener",
-    problem: "Screening large volumes of stock data can become overwhelming without thoughtful information architecture.",
-    solution: "Created filter-first interfaces, reusable data presentation components, and cleaner state-driven user flows.",
-    stack: ["React", "Next.js", "TypeScript", "REST APIs"],
-    role: "Frontend Architecture and Implementation",
+    title: "Legacy XSLT to Next.js Migration",
+    problem: "Flagship pages ran on legacy XSLT, limiting accessibility, maintainability, and further performance improvements.",
+    solution: "Directed a large-scale migration to React.js, Next.js, and TypeScript with a focus on SSR and Core Web Vitals.",
+    stack: ["Next.js", "React.js", "TypeScript", "SSR"],
+    role: "Tech Lead",
     features: [
-      "Advanced filter UI",
-      "Reusable cards and tables",
-      "Mobile-friendly layouts",
-      "Scalable API integration",
+      "SSR-based rendering",
+      "Improved Core Web Vitals",
+      "Modern component architecture",
+      "Accessibility improvements",
     ],
-    impact: "Made complex stock discovery tasks easier to use and simpler to maintain for future enhancements.",
+    impact: "Measurable Core Web Vitals gains and a more maintainable codebase across flagship products.",
   },
   {
-    title: "Ishita Swim",
-    problem: "The business needed a polished digital presence that felt credible, modern, and conversion-ready.",
-    solution: "Delivered a clean branded website with clear CTAs, service communication, and responsive presentation.",
-    stack: ["Next.js", "React", "CSS", "SEO"],
-    role: "Frontend Developer",
+    title: "Self-Serve Business Admin Panels",
+    problem: "Business teams depended on engineering for routine ad, IPO, and subscription configuration changes.",
+    solution: "Built the ET Ad Management Panel, IPO Management Panel, and Subscription Management Panel using Next.js and React.js.",
+    stack: ["Next.js", "React.js", "Node.js"],
+    role: "Tech Lead",
     features: [
-      "Modern hero section",
-      "Service-led content structure",
-      "Responsive design",
-      "Lead-generation CTAs",
+      "Self-serve configuration UI",
+      "Role-based access",
+      "Real-time updates to production ad rules",
+      "Subscription data management",
     ],
-    impact: "Helped the brand present professionally online and support inquiry-driven growth.",
+    impact: "Reduced engineering turnaround for business-driven configuration changes across ad, IPO, and subscription workflows.",
   },
   {
-    title: "Luxyh E-commerce",
-    problem: "The storefront needed a premium feel without sacrificing speed, clarity, or maintainability.",
-    solution: "Built reusable commerce UI sections with strong visual hierarchy and lightweight interaction patterns.",
-    stack: ["React", "Next.js", "E-commerce UX"],
-    role: "Frontend Developer",
-    features: [
-      "Catalog-focused layout",
-      "Premium visual treatment",
-      "Reusable components",
-      "Responsive shopping experience",
-    ],
-    impact: "Elevated presentation quality while keeping the frontend easier to scale and iterate on.",
+    title: "FedEx Print Online Enterprise Platform",
+    problem: "FedEx needed a scalable enterprise platform for document printing, customization, and order management.",
+    solution: "Built and enhanced the platform using React.js, JavaScript, CanJS, HTML5, CSS3, AJAX, and JSON.",
+    stack: ["React.js", "JavaScript", "CanJS", "AJAX"],
+    role: "Sr. Consultant",
+    features: ["Document customization workflows", "Order management", "Enterprise-scale printing pipeline"],
+    impact: "Delivered scalable printing and order management capabilities for a global enterprise customer.",
   },
 ] as const;
 
 export const experience = [
   {
-    period: "2015 to Present",
-    company: "Times Internet Limited",
-    role: "Senior Frontend Engineer",
+    period: "May 2019 to Present",
+    company: "The Economic Times (Times Internet)",
+    role: "Tech Lead – Front End Development",
+    location: "Noida, India",
     points: [
-      "Delivered senior frontend work across React and Next.js products for finance and media properties.",
-      "Contributed to AI and financial product experiences including GPT-style discovery surfaces and data-heavy tools.",
-      "Supported SEO migrations, SSR adoption, performance optimization, and maintainable frontend architecture.",
-      "Led feature delivery, engineering coordination, and mentoring support across cross-functional teams.",
+      "Serve as sole technical owner of the publisher monetization stack supporting 340M+ monthly views and 90–110M monthly visits, architecting ad solutions across Desktop Web, Mobile Web, and AMP using GAM/DFP, Prebid.js, APS, and Header Bidding.",
+      "Designed and built a centralized ad configuration management platform (Next.js, React.js, Node.js) deployed across 8 repositories, standardizing ad implementation and cutting integration time for new properties.",
+      "Directed frontend architecture and large-scale migration initiatives to React.js, Next.js, and TypeScript, improving Core Web Vitals scores and overall application performance across flagship products.",
+      "Migrated legacy XSLT applications to modern Next.js architecture, improving accessibility, maintainability, and page performance.",
+      "Built and shipped the ET Ad Management Panel, IPO Management Panel, and Subscription Management Panel (Next.js, React.js), giving business teams self-serve control over configurable ads and subscription data.",
+      "Mentored a team of frontend engineers, leading development for Economic Times Web and Mobile Web platforms and establishing engineering best practices.",
+      "Integrated AI-assisted development tools (Claude, ChatGPT, Cursor, Codex) into team workflows, improving code review turnaround and production velocity.",
     ],
   },
   {
-    period: "2014 to 2015",
-    company: "Wincere Pvt Ltd",
-    role: "Senior UI Consultant",
-    points: ["Built enterprise-facing UI systems and responsive pages with strong frontend quality standards."],
+    period: "Mar 2016 to May 2019",
+    company: "Infogain India Private Limited",
+    role: "Sr. Consultant",
+    location: "Noida, India",
+    points: [
+      "Developed and enhanced the FedEx Print Online enterprise platform using React.js, JavaScript, CanJS, HTML5, CSS3, AJAX, and JSON, delivering scalable document printing, customization, and order management capabilities.",
+    ],
   },
   {
-    period: "2013 to 2014",
-    company: "hCentive Pvt Ltd",
-    role: "UI Developer",
-    points: ["Worked on production web interfaces with focus on structure, usability, and browser compatibility."],
+    period: "Jan 2014 to Mar 2016",
+    company: "Capgemini India Private Limited",
+    role: "Consultant",
+    location: "Pune, India",
+    points: [
+      "Built secure, scalable online banking features for the HSBC Banking Platform using JavaScript, Dojo, jQuery, AJAX, HTML5, CSS3, and JSON.",
+    ],
   },
   {
-    period: "2012 to 2013",
-    company: "Ophio Technologies",
-    role: "Front End Developer",
-    points: ["Developed frontend experiences for business websites and content-driven web properties."],
+    period: "Oct 2011 to Sep 2013",
+    company: "Samsung India Software Centre",
+    role: "Senior Software Engineer",
+    location: "Noida, India",
+    points: [
+      "Developed Smart TV applications using JavaScript, HTML5, and the Samsung SDK.",
+      "Led a multithreading migration initiative across 200+ Smart TV applications.",
+      "Received the Best Mentor Award (2012) for outstanding contribution to team development.",
+    ],
   },
   {
-    period: "2011 to 2012",
-    company: "Compare Infobase",
-    role: "HTML Developer",
-    points: ["Started professional web development work building standards-based pages and reusable UI assets."],
+    period: "Mar 2011 to Oct 2011",
+    company: "ONS Interactive Solutions Pvt. Ltd",
+    role: "Senior Software Engineer",
+    location: "Noida, India",
+    points: [
+      "Enhanced enterprise e-commerce platforms using PHP, MySQL, JavaScript, jQuery, AJAX, and Magento, delivering new features, bug fixes, and performance improvements.",
+    ],
+  },
+  {
+    period: "Oct 2008 to Mar 2011",
+    company: "Chetu (I) Pvt. Ltd",
+    role: "Software Engineer",
+    location: "Noida, India",
+    points: [
+      "Built scalable e-commerce solutions for PC Game Supply using PHP, MySQL, JavaScript, jQuery, and AJAX, including secure payment workflows and digital product delivery.",
+    ],
+  },
+  {
+    period: "Jan 2008 to Oct 2008",
+    company: "KLG SYSTEL LTD",
+    role: "Software Programmer",
+    location: "Gurgaon, India",
+    points: [
+      "Developed enterprise web applications for Isha Foundation, including a contact management system and an online event registration portal, using PHP, MySQL, JavaScript, and AJAX.",
+    ],
+  },
+  {
+    period: "Apr 2007 to Jan 2008",
+    company: "H114 Technologies",
+    role: "Developer",
+    location: "India",
+    points: [
+      "Built a recruitment management portal using PHP, MySQL, JavaScript, and AJAX for managing job openings and candidate resumes.",
+    ],
   },
 ] as const;
 
 export const aiWorkflow = [
-  "ChatGPT for debugging, architecture planning, and technical documentation.",
-  "Cursor AI for code generation, refactoring, and implementation acceleration.",
-  "GitHub Copilot for faster development during repetitive or well-defined engineering tasks.",
-  "Claude for long-form code review, reasoning through larger files, and documentation support.",
-  "AI-assisted PR review and prompt engineering to improve delivery quality and engineering clarity.",
-  "Faster shipping with stronger code quality when AI tools are used as part of a disciplined workflow.",
+  "ChatGPT and Claude for architecture planning, debugging, and technical documentation.",
+  "Cursor and Codex for code generation, refactoring, and faster implementation.",
+  "AI-assisted code review integrated into team workflows, improving turnaround and production velocity.",
+  "Mentors engineers on integrating AI tools responsibly into day-to-day development.",
+  "Actively expanding skills in Python, AI tooling, and automation.",
 ] as const;
 
 export const blogPosts = [
   {
+    tag: "Ad Tech",
+    title: "Header Bidding with Prebid.js and GAM: A Practical Guide",
+    excerpt: "Setting up Prebid.js alongside Google Ad Manager for header bidding, yield management, and demand partner integration.",
+  },
+  {
     tag: "Next.js",
-    title: "Next.js 15 Performance Optimization",
-    excerpt:
-      "Practical ways to improve rendering, bundle strategy, image handling, and Core Web Vitals in large Next.js apps.",
-  },
-  {
-    tag: "React",
-    title: "React Interview Questions",
-    excerpt:
-      "Senior-level React questions covering architecture, rendering, performance, state, and frontend problem-solving.",
-  },
-  {
-    tag: "AI Workflow",
-    title: "AI Tools for Frontend Developers",
-    excerpt:
-      "How ChatGPT, Cursor AI, GitHub Copilot, and Claude fit into a fast but quality-conscious engineering workflow.",
-  },
-  {
-    tag: "Node.js",
-    title: "Node.js API Best Practices",
-    excerpt:
-      "A practical guide to predictable API structure, validation, error handling, observability, and deployment readiness.",
+    title: "Migrating Legacy XSLT to Next.js at Scale",
+    excerpt: "Lessons from migrating high-traffic publisher pages to Next.js without sacrificing SEO or Core Web Vitals.",
   },
   {
     tag: "Performance",
-    title: "How to Improve Core Web Vitals",
-    excerpt: "Real-world techniques for reducing layout shift, improving input responsiveness, and shipping faster pages.",
+    title: "Core Web Vitals for High-Traffic Publisher Sites",
+    excerpt: "Practical techniques for improving LCP, INP, and CLS on ad-heavy, content-dense pages.",
+  },
+  {
+    tag: "AI Workflow",
+    title: "Using Claude, ChatGPT, Cursor, and Codex in a Production Team",
+    excerpt: "How AI-assisted development tools fit into a disciplined, review-driven engineering workflow.",
+  },
+  {
+    tag: "Architecture",
+    title: "Building a Centralized Ad Configuration Platform",
+    excerpt: "Design decisions behind standardizing ad implementation across 8 repositories and multiple properties.",
   },
 ] as const;
 
 export const resumeStats = [
-  { value: "13+", label: "Years Experience" },
-  { value: "8+", label: "Years React.js" },
-  { value: "5+", label: "Years Next.js" },
-  { value: "50+", label: "Projects Delivered" },
-  { value: "100+", label: "Production Releases" },
+  { value: "15+", label: "Years Experience" },
+  { value: "340M+", label: "Monthly Views" },
+  { value: "90-110M", label: "Monthly Visits" },
+  { value: "8", label: "Repos Standardized" },
+  { value: "7+", label: "Yrs Ad Tech Ownership" },
 ] as const;
 
 export const resumeSkillGroups = [
@@ -281,161 +349,73 @@ export const resumeSkillGroups = [
     title: "Frontend",
     skills: [
       "React.js",
-      "Next.js 14/15",
+      "Next.js",
       "TypeScript",
-      "JavaScript ES6+",
+      "JavaScript (ES6+/ES5)",
+      "Redux",
       "HTML5",
       "CSS3",
-      "SCSS",
-      "Tailwind CSS",
-      "Bootstrap",
-      "Material UI",
+      "jQuery",
+      "Responsive Design",
     ],
   },
   {
-    title: "React Ecosystem",
+    title: "Backend / API",
+    skills: ["Node.js", "REST APIs", "JWT Authentication", "Axios", "JSON", "MongoDB"],
+  },
+  {
+    title: "Ad Tech / Monetization",
     skills: [
-      "React Hooks",
-      "Custom Hooks",
-      "Context API",
-      "Redux Toolkit",
-      "Zustand",
-      "React Query",
-      "Axios",
-      "Formik",
-      "Yup",
+      "Google Ad Manager (GAM/DFP)",
+      "Prebid.js",
+      "Amazon Publisher Services (APS)",
+      "Header Bidding",
+      "Taboola",
+      "VDO.AI",
+      "Magnite",
+      "Columbia Ad Platform",
     ],
   },
   {
-    title: "Next.js",
-    skills: [
-      "App Router",
-      "Pages Router",
-      "SSR",
-      "SSG",
-      "ISR",
-      "Dynamic Routing",
-      "Middleware",
-      "API Routes",
-      "Metadata SEO",
-      "Image Optimization",
-    ],
+    title: "Performance & SEO",
+    skills: ["Core Web Vitals", "Lighthouse", "Google Search Console", "Chrome DevTools", "Server-Side Rendering (SSR)"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "REST APIs", "JWT Authentication", "MySQL", "MongoDB", "Sequelize", "Mongoose"],
+    title: "Cloud & DevOps / Build Tools",
+    skills: ["AWS (S3)", "Linode (Akamai Cloud)", "Git", "GitHub", "Bitbucket", "Jenkins", "Webpack", "Babel", "NPM", "Yarn"],
   },
   {
-    title: "Performance",
-    skills: ["Core Web Vitals", "Lighthouse", "Lazy Loading", "Code Splitting", "Bundle Optimization", "SEO Optimization"],
+    title: "AI-Assisted Development",
+    skills: ["Claude", "ChatGPT", "Cursor", "Codex"],
   },
   {
-    title: "Cloud / Deployment",
-    skills: ["AWS EC2", "Nginx", "PM2", "Vercel", "Railway", "GitHub Deployment"],
+    title: "Practices",
+    skills: ["Agile/Scrum", "Team Leadership & Mentoring", "Enterprise Application Architecture"],
   },
-  {
-    title: "Tools",
-    skills: ["Git", "Jira", "Postman", "Chrome DevTools", "VS Code", "Cursor AI"],
-  },
-  {
-    title: "AI Tools",
-    skills: ["ChatGPT", "Cursor AI", "GitHub Copilot", "Claude", "Prompt Engineering", "AI Code Review"],
-  },
-] as const;
-
-export const resumeWorkExperience = {
-  company: "Times Internet Limited",
-  role: "Senior Frontend Engineer / Manager Frontend Technology",
-  period: "2015 - Present",
-  responsibilities: [
-    "Built scalable frontend applications using React.js, Next.js and JavaScript.",
-    "Migrated legacy XSLT pages to modern Next.js architecture.",
-    "Developed SEO-friendly, high-performance pages using SSR and dynamic routing.",
-    "Integrated REST APIs for real-time market data and subscription-based features.",
-    "Worked on ET Markets, ET Wealth, AI Screener, Markets GPT, Watchlist and Mutual Funds platforms.",
-    "Improved UI performance, responsiveness and Core Web Vitals.",
-    "Led frontend development and mentored junior developers.",
-  ],
-} as const;
-
-export const resumeMajorProjects = [
-  {
-    title: "ET Markets GPT",
-    stack: ["Next.js", "React.js", "TypeScript", "REST APIs", "Subscription Access"],
-    description: "AI-powered market assistant built for ET Markets users with login/subscription-based access.",
-  },
-  {
-    title: "AI Stock Screener",
-    stack: ["Next.js", "React.js", "APIs", "User Access Control"],
-    description: "Stock screening platform with AI/manual mode, dynamic filters and user-based access.",
-  },
-  {
-    title: "ET Markets Watchlist",
-    stack: ["React.js", "Next.js", "JavaScript"],
-    description: "Multi-watchlist platform with stocks, news, recommendations, alerts and corporate actions.",
-  },
-  {
-    title: "Company Page Revamp",
-    stack: ["Next.js", "React.js", "SSR", "SEO"],
-    description: "Migrated company pages from legacy system to modern Next.js with real-time charts and market data.",
-  },
-  {
-    title: "Mutual Funds Platform",
-    stack: ["Next.js", "React.js", "APIs"],
-    description: "Built mutual fund listing and data-driven sections with SEO-focused layout.",
-  },
-  {
-    title: "Ishita Swim",
-    stack: ["Next.js 15", "Node.js", "MongoDB"],
-    description: "Full-stack swimming academy management system with booking, admin panel and user management.",
-  },
-  {
-    title: "Luxyh E-commerce",
-    stack: ["Next.js", "Node.js", "MongoDB", "Payment Gateway"],
-    description: "Full-stack e-commerce platform with product management, order tracking and admin dashboard.",
-  },
-] as const;
-
-export const freelanceWork = [
-  "MindMajix: Next.js 14 migration and Node.js API improvements.",
-  "Tekslate: Training platform migration to Next.js and backend optimization.",
-  "Ishita Swim: Full-stack swimming management app.",
-  "Luxyh: Full-stack e-commerce web app.",
 ] as const;
 
 export const education = [
-  "Master's in Political Science - MDU Rohtak",
-  "Bachelor of Arts - Delhi University",
+  {
+    degree: "B.Tech, Computer Science & Engineering",
+    school: "B.P. Poddar Institute of Management & Technology",
+    period: "2000 – 2006",
+    detail: "75.2%",
+  },
 ] as const;
 
-export const certifications = {
-  count: "15",
-  period: "2024-2025",
-  source: "LinkedIn Learning",
-  items: [
-    "JavaScript Essential Training",
-    "Next.js: Creating and Hosting a Full-Stack Site",
-    "Node.js: Microservices",
-    "Explore Web Development with Node.js",
-    "Building RESTful APIs with Node.js and Express",
-    "Node: Authentication",
-    "Node.js: Securing RESTful APIs",
-    "Node.js: Web Servers, Tests, and Deployment",
-    "Express Essentials: Build Powerful Web Apps with Node.js",
-    "Databases for Node.js Developers",
-    "Node.js: Testing and Code Quality",
-    "Learning npm: A Package Manager",
-    "Node.js Essential Training",
-  ],
-} as const;
+export const additionalStrengths = [
+  "Excellent debugging and problem-solving skills; quick learner with a strong work ethic.",
+  "Strong mentorship track record, committed to deadlines and delivery quality.",
+  "Actively expanding skills in Python, AI tooling, and automation.",
+] as const;
 
 export const heroPages = {
   about: {
     eyebrow: "Immediate Joiner",
     title: "About Priyabrata",
-    subtitle: "Immediate Joiner for senior frontend engineering, SEO, and product delivery",
+    subtitle: "Frontend Tech Lead specializing in Ad Tech, monetization, and large-scale Next.js migrations",
     copy:
-      "From Times Internet to enterprise delivery, the focus has stayed consistent: build maintainable interfaces, improve performance, and help teams ship frontend systems that last as an Immediate Joiner.",
+      "7+ years as sole technical owner of a publisher monetization ecosystem at The Economic Times, with 15+ years overall building scalable frontend systems across enterprise, banking, and consumer platforms.",
     actions: [
       { href: profile.resumeFile, label: "Download Resume", primary: true },
       { href: "/contact", label: "Let's Connect", primary: false },
@@ -444,32 +424,32 @@ export const heroPages = {
   work: {
     eyebrow: "Immediate Joiner",
     title: "Projects",
-    subtitle: "Immediate Joiner frontend projects, migrations, and AI product work",
-    copy: "Selected work across fintech, content platforms, business websites, e-commerce, and modernization programs.",
+    subtitle: "Ad tech platforms, publisher tools, and large-scale frontend migrations",
+    copy: "Selected work across publisher monetization, business admin tools, enterprise platforms, and Next.js migrations.",
     actions: [],
   },
   blog: {
     eyebrow: undefined,
     title: "Blog",
-    subtitle: "Frontend, performance, and AI writing topics",
-    copy: "This page now features publish-ready article topics instead of pointing to an unconfigured Blogger API.",
+    subtitle: "Ad tech, performance, and AI-assisted engineering topics",
+    copy: "Article ideas drawn from real work in header bidding, Next.js migrations, Core Web Vitals, and AI-assisted development.",
     actions: [],
   },
   contact: {
     eyebrow: "Immediate Joiner",
     title: "Contact",
-    subtitle: "Immediate Joiner available for senior frontend and full stack roles",
+    subtitle: "Immediate Joiner available for Staff/Lead frontend and ad tech roles",
     copy:
-      "Reach out for Immediate Joiner, Senior Frontend Engineer, Lead Frontend Engineer, React/Next.js Developer, and Full Stack Developer opportunities, consulting, or product collaboration.",
+      "Reach out for Staff Software Engineer, Frontend Tech Lead, Senior Frontend Engineer, Ad Tech, or Monetization-focused roles, consulting, or product collaboration.",
     actions: [],
   },
   resume: {
     eyebrow: "Resume | Immediate Joiner",
     title: "Priyabrata Bera",
-    resumeTitle: "Senior Frontend Engineer | Immediate Joiner",
-    subtitle: "Immediate Joiner | React.js | Next.js | TypeScript | Node.js",
+    resumeTitle: "Staff Software Engineer | Frontend Tech Lead | Ad Tech & Monetization Specialist",
+    subtitle: "React.js · Next.js · TypeScript · Node.js · Ad Tech",
     copy:
-      "Immediate Joiner with 13+ years of experience building scalable frontend applications, enterprise platforms, SEO-friendly websites, and AI-powered tools.",
+      "Immediate Joiner with 15+ years of experience architecting scalable frontend applications, and 7+ years as sole technical owner of a publisher monetization ecosystem serving 340M+ monthly views.",
     actions: [
       { href: profile.resumeFile, label: "Download Resume", primary: true },
       { href: "/contact", label: "Contact Me", primary: false },

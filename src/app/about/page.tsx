@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/sections/PageHero";
 import { About } from "@/components/sections/About";
+import { AdTech } from "@/components/sections/AdTech";
 import { Skills } from "@/components/sections/Skills";
 import { Experience } from "@/components/sections/Experience";
 import { AiWorkflow } from "@/components/sections/AiWorkflow";
@@ -13,6 +14,7 @@ export default function AboutPage() {
     <div>
       <PageHero {...heroPages.about} />
       <About />
+      <AdTech />
       <Skills />
       <Experience />
       <AiWorkflow />

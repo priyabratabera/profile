@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/sections/PageHero";
+import { Experience } from "@/components/sections/Experience";
 import { Section, SectionHeading, Surface, Chip, Btn } from "@/components/ui";
 import {
   heroPages,
   resumeStats,
   resumeSkillGroups,
-  resumeWorkExperience,
-  resumeMajorProjects,
-  freelanceWork,
+  projects,
   education,
-  certifications,
+  additionalStrengths,
+  professionalSummary,
   profile,
 } from "@/lib/content";
 
@@ -35,13 +35,7 @@ export default function ResumePage() {
       <Section id="professional-summary">
         <SectionHeading eyebrow="Professional Summary" title="Clear, ATS-friendly frontend profile" />
         <Surface className="p-6">
-          <p className="text-sm text-muted">
-            Immediate Joiner and Senior Frontend Engineer with strong experience in React.js,
-            Next.js, TypeScript, JavaScript, Node.js, SSR, SEO, Core Web Vitals, responsive UI,
-            REST API integration, and scalable frontend architecture. Experienced in working on
-            high-traffic platforms, AI tools, financial products, admin panels, e-commerce
-            platforms, and enterprise applications.
-          </p>
+          <p className="text-sm text-muted">{professionalSummary}</p>
         </Surface>
       </Section>
 
@@ -61,31 +55,15 @@ export default function ResumePage() {
         </div>
       </Section>
 
-      <Section id="work-experience">
-        <SectionHeading eyebrow="Work Experience" title="Times Internet leadership and product delivery" />
-        <Surface className="p-6">
-          <div className="flex flex-wrap items-baseline justify-between gap-2">
-            <div>
-              <h3 className="text-lg font-semibold">{resumeWorkExperience.company}</h3>
-              <p className="text-sm font-medium text-muted">{resumeWorkExperience.role}</p>
-            </div>
-            <span className="text-xs font-semibold uppercase tracking-wide text-brand">
-              {resumeWorkExperience.period}
-            </span>
-          </div>
-          <h4 className="mt-4 text-sm font-semibold text-muted">Key Responsibilities</h4>
-          <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-ink/85">
-            {resumeWorkExperience.responsibilities.map((point) => (
-              <li key={point}>{point}</li>
-            ))}
-          </ul>
-        </Surface>
-      </Section>
+      <Experience
+        eyebrow="Work Experience"
+        title="Professional experience across ad tech, enterprise, and consumer platforms"
+      />
 
       <Section id="major-projects">
         <SectionHeading eyebrow="Major Projects" title="Selected platforms and product work" />
         <div className="grid gap-4 sm:grid-cols-2">
-          {resumeMajorProjects.map((project) => (
+          {projects.map((project) => (
             <Surface key={project.title} className="p-5">
               <h3 className="font-semibold">{project.title}</h3>
               <div className="mt-2 flex flex-wrap gap-2">
@@ -99,44 +77,27 @@ export default function ResumePage() {
         </div>
       </Section>
 
-      <Section id="freelance">
-        <SectionHeading eyebrow="Freelance / Consulting" title="Independent project delivery" />
-        <Surface className="p-6">
-          <ul className="list-inside list-disc space-y-1.5 text-sm text-ink/85">
-            {freelanceWork.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </Surface>
-      </Section>
-
       <div className="grid gap-4 sm:grid-cols-2">
         <Section id="education">
           <SectionHeading eyebrow="Education" title="Academic background" />
           <Surface className="p-6">
-            <ul className="list-inside list-disc space-y-1.5 text-sm text-ink/85">
-              {education.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+            {education.map((item) => (
+              <div key={item.degree}>
+                <h3 className="font-semibold">{item.degree}</h3>
+                <p className="mt-1 text-sm text-muted">{item.school}</p>
+                <p className="mt-1 text-sm text-ink/85">
+                  {item.period} &middot; {item.detail}
+                </p>
+              </div>
+            ))}
           </Surface>
         </Section>
 
-        <Section id="certifications">
-          <SectionHeading eyebrow="Certifications / Learning" title="Professional Certifications" />
+        <Section id="strengths">
+          <SectionHeading eyebrow="Additional Strengths" title="What I bring beyond the stack" />
           <Surface className="p-6">
-            <p className="text-sm text-muted">
-              {certifications.source} certifications focused on JavaScript, Next.js, Node.js, REST
-              APIs, authentication, deployment, testing, and backend development.
-            </p>
-            <div className="mt-3 flex gap-4 text-sm">
-              <span>
-                <strong className="text-brand">{certifications.count}</strong> Certificates
-              </span>
-              <span className="text-muted">{certifications.period}</span>
-            </div>
-            <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-ink/85">
-              {certifications.items.map((item) => (
+            <ul className="list-inside list-disc space-y-1.5 text-sm text-ink/85">
+              {additionalStrengths.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
