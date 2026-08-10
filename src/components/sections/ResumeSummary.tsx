@@ -2,8 +2,8 @@ import { Section, SectionHeading, Surface, Btn } from "@/components/ui";
 import { profile, professionalSummary } from "@/lib/content";
 
 const highlights = [
-  "7+ years as sole technical owner of The Economic Times' publisher monetization stack, serving 340M+ monthly views.",
-  "Deep hands-on expertise with GAM/DFP, Prebid.js, Amazon Publisher Services, and Header Bidding.",
+  "15+ years building scalable, high-performance web applications across media, banking, ecommerce, and enterprise platforms.",
+  "Hands-on GenAI application development: LLM integration, RAG pipelines, streaming responses, and local inference with Ollama.",
   "Proven track record leading large-scale Next.js migrations and mentoring frontend engineering teams.",
 ];
 

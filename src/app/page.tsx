@@ -1,6 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
-import { AdTech } from "@/components/sections/AdTech";
+import { GenAi } from "@/components/sections/GenAi";
 import { Skills } from "@/components/sections/Skills";
 import { Projects } from "@/components/sections/Projects";
 import { CaseStudies } from "@/components/sections/CaseStudies";
@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Hero />
       <About />
-      <AdTech />
+      <GenAi />
       <Skills />
       <Projects />
       <CaseStudies />

@@ -16,8 +16,8 @@ export function Contact() {
       <div className="grid gap-4 sm:grid-cols-2">
         <Surface className="p-6">
           <p className="text-sm text-muted">
-            Immediate Joiner available for Senior Frontend Engineer, Lead Frontend Engineer,
-            React/Next.js Developer, and Full Stack Developer roles.
+            Immediate Joiner available for Staff Frontend Engineer, Frontend Architect,
+            React/Next.js Developer, Full-Stack Developer, and AI Engineer roles.
           </p>
           <dl className="mt-4 space-y-2 text-sm">
             {details.map((detail) => (

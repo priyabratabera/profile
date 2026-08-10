@@ -1,23 +1,24 @@
 export const profile = {
   name: "Priyabrata Bera",
   initials: "PB",
-  title: "Staff Software Engineer | Frontend Tech Lead",
-  tagline: "React.js · Next.js · TypeScript · Node.js · Ad Tech & Monetization",
+  title: "Staff Frontend Engineer | Frontend Architect | AI Engineer",
+  tagline: "React.js · Next.js · JavaScript · TypeScript · Tailwind CSS · Node.js · REST API · Python · FastAPI · GenAI · RAG · LLM",
   summary:
-    "Frontend Tech Lead with 15+ years of experience architecting scalable web applications, and 7+ years as sole technical owner of a publisher monetization ecosystem serving 340M+ monthly views.",
+    "Frontend Architect and Tech Lead with 15+ years building scalable, high-performance web applications across media, banking, ecommerce, and enterprise platforms — now building end-to-end GenAI applications with LLM integration and RAG pipelines.",
   photoAlt: "Priyabrata Bera profile photo",
   email: "priyabrata.bera@gmail.com",
   phoneDisplay: "+91 9158617600",
   phoneTel: "+919158617600",
   whatsapp: "https://wa.me/919158617600",
   location: "Noida, India",
+  website: "https://priyabrata.tech",
   linkedin: "https://www.linkedin.com/in/priyabrata-bera-6501b019/",
   github: "https://github.com/priyabratabera",
-  resumeFile: "/assets/Priyabrata_Bera_Resume_Optimized_v2.pdf",
+  resumeFile: "/assets/Priyabrata_Bera_Resume.pdf",
 } as const;
 
 export const professionalSummary =
-  "Frontend Tech Lead with 15+ years of experience architecting and delivering scalable, high-performance web applications using React.js, Next.js, TypeScript, JavaScript, and Node.js. 7+ years as sole technical owner of a publisher monetization ecosystem serving 340M+ monthly views, driving ad tech strategy across Desktop Web, Mobile Web, and AMP through Google Ad Manager (GAM/DFP), Prebid.js, Amazon Publisher Services (APS), and Header Bidding. Proven track record leading large-scale Next.js migrations, mentoring engineering teams, and integrating AI-assisted development tools (ChatGPT, Claude, Cursor, Codex) to accelerate delivery. Strong focus on Core Web Vitals, SSR, REST API architecture, and revenue-driving ad optimization.";
+  "Frontend Architect and Tech Lead with 15+ years of experience building scalable, high-performance web applications for media, banking, ecommerce, and enterprise platforms. Expert in React.js, Next.js, TypeScript, JavaScript, Node.js, frontend architecture, performance optimization, and engineering leadership. Led large-scale frontend modernization initiatives, mentored engineering teams, and delivered business-critical products used by millions of users. Hands-on with GenAI application development, including LLM integration, RAG pipelines, and AI-assisted engineering workflows using Claude, ChatGPT, Cursor, and Codex. Strong focus on Core Web Vitals, SSR, REST API design, and frontend performance optimization.";
 
 export const navLinks = [
   { href: "/", label: "Home" },
@@ -31,67 +32,77 @@ export const navLinks = [
 export const socialLinks = [
   { href: profile.linkedin, label: "LinkedIn", icon: "linkedin" },
   { href: profile.github, label: "GitHub", icon: "github" },
+  { href: profile.website, label: "Website", icon: "website" },
   { href: `mailto:${profile.email}`, label: "Email", icon: "envelope" },
   { href: profile.whatsapp, label: "WhatsApp", icon: "whatsapp" },
 ] as const;
 
 export const heroStats = [
   { value: "15+", label: "Years Experience" },
-  { value: "340M+", label: "Monthly Views" },
   { value: "90-110M", label: "Monthly Visits" },
-  { value: "7+", label: "Yrs Ad Tech Ownership" },
+  { value: "4", label: "AI Dev Tools" },
+  { value: "3", label: "GenAI Projects" },
 ] as const;
 
 export const aboutHighlights = [
-  "Sole technical owner of a publisher monetization stack serving 340M+ monthly views across Desktop Web, Mobile Web, and AMP.",
-  "Deep expertise in Google Ad Manager (GAM/DFP), Prebid.js, Amazon Publisher Services (APS), and Header Bidding strategy.",
+  "Frontend Architect and Tech Lead with 15+ years building scalable, high-performance web applications across media, banking, ecommerce, and enterprise platforms.",
+  "Builds end-to-end GenAI applications — LLM integration, RAG pipelines, streaming responses, and local inference with Ollama.",
   "Led large-scale frontend migrations to React.js, Next.js, and TypeScript, improving Core Web Vitals across flagship products.",
-  "Designed a centralized ad configuration platform deployed across 8 repositories, standardizing implementation for new properties.",
+  "Designed a centralized configuration management platform deployed across 8 repositories, standardizing implementation patterns for new properties.",
   "Migrated legacy XSLT applications to modern Next.js architecture, improving accessibility, maintainability, and performance.",
-  "Mentors frontend engineers and integrates AI-assisted tools (Claude, ChatGPT, Cursor, Codex) to accelerate delivery.",
+  "Mentors engineering teams and integrates AI-assisted tools (Claude, ChatGPT, Cursor, Codex) to accelerate delivery.",
 ] as const;
 
-export const adTech = {
+export const genAi = {
   copy:
-    "As sole technical owner of The Economic Times' publisher monetization stack, I architect ad solutions across Desktop Web, Mobile Web, and AMP — driving header bidding strategy, yield optimization, and platform standardization across 8 repositories.",
-  stats: [
-    { value: "340M+", label: "Monthly Views" },
-    { value: "90-110M", label: "Monthly Visits" },
-    { value: "8", label: "Repos Standardized" },
-    { value: "7+", label: "Years Ownership" },
-  ],
-  tools: [
-    "Google Ad Manager (GAM/DFP)",
-    "Prebid.js",
-    "Amazon Publisher Services (APS)",
-    "Header Bidding",
-    "Taboola",
-    "VDO.AI",
-    "Magnite",
-    "Columbia Ad Platform",
+    "Self-initiated projects built outside of professional work to explore end-to-end GenAI application development — LLM integration, RAG pipelines, streaming responses, and local inference with Ollama.",
+  projects: [
+    {
+      title: "AI Conversational Assistant",
+      stack: ["Next.js", "React.js", "Node.js / Python", "FastAPI", "Ollama", "Streaming", "LLM"],
+      points: [
+        "Built an end-to-end AI conversational application using Next.js/React.js and locally hosted Ollama LLMs.",
+        "Developed backend APIs with FastAPI/Node.js for LLM interaction and conversation management.",
+        "Implemented streaming AI responses for a real-time experience, with conversation memory to maintain context across interactions.",
+        "Designed an LLM provider abstraction layer supporting multiple providers, with configurable system-prompt management to control model behavior.",
+      ],
+    },
+    {
+      title: "RAG-Based Document Intelligence Application",
+      stack: ["Next.js", "React.js", "Python", "FastAPI", "ChromaDB", "Embeddings", "Ollama", "RAG"],
+      points: [
+        "Built an end-to-end Retrieval-Augmented Generation (RAG) application for intelligent question answering over PDF documents.",
+        "Implemented PDF extraction, text chunking, embedding generation, and vector storage in ChromaDB with semantic retrieval of the most relevant chunks per query.",
+        "Applied grounded prompting to constrain responses to retrieved context and reduce hallucinations; integrated Ollama for local inference with streaming through FastAPI.",
+        "Added source citations with document name, page number, and relevant content snippets.",
+        "Designed modular backend services separating document processing, embeddings, retrieval, prompt construction, and generation.",
+      ],
+    },
+    {
+      title: "AI Personalized News Intelligence Platform",
+      stack: ["Next.js", "React.js", "Python", "FastAPI", "Embeddings", "Vector Search", "Ollama", "LLM"],
+      points: [
+        "Built a GenAI platform that aggregates news and delivers personalized, topic-aware feeds using embeddings and semantic vector search.",
+        "Generated concise, LLM-powered summaries of long-form articles for faster reading, with streaming responses served through FastAPI.",
+        "Modeled reader interests from engagement signals to rank and recommend the most relevant stories per user.",
+        "Integrated locally hosted Ollama LLMs for summarization and semantic understanding, keeping inference private and low-cost.",
+      ],
+    },
   ],
 } as const;
 
 export const skillGroups = [
   {
     title: "Frontend",
-    skills: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+/ES5)", "Redux", "HTML5", "CSS3", "jQuery"],
+    skills: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+/ES5)", "Redux", "HTML5", "CSS3", "jQuery", "Responsive Design", "Figma"],
   },
   {
     title: "Backend / API",
-    skills: ["Node.js", "REST APIs", "JWT Authentication", "Axios", "JSON", "MongoDB"],
+    skills: ["Node.js", "REST APIs", "JWT Authentication", "Axios", "JSON", "MongoDB", "Python", "FastAPI"],
   },
   {
-    title: "Ad Tech & Monetization",
-    skills: [
-      "Google Ad Manager (GAM/DFP)",
-      "Prebid.js",
-      "Amazon Publisher Services (APS)",
-      "Header Bidding",
-      "Taboola",
-      "VDO.AI",
-      "Magnite",
-    ],
+    title: "GenAI / AI Engineering",
+    skills: ["LLM Integration", "RAG", "Ollama", "ChromaDB", "Embeddings", "Prompt Engineering", "Streaming Responses", "Vector Search"],
   },
   {
     title: "Performance & SEO",
@@ -99,7 +110,7 @@ export const skillGroups = [
   },
   {
     title: "Cloud & DevOps",
-    skills: ["AWS (S3)", "Linode (Akamai Cloud)", "Git", "GitHub", "Bitbucket", "Jenkins", "Webpack", "Babel"],
+    skills: ["AWS", "Linode (Akamai Cloud)", "Git", "GitHub", "Bitbucket", "Jenkins"],
   },
   {
     title: "AI-Assisted Development",
@@ -110,37 +121,48 @@ export const skillGroups = [
 export const projects = [
   {
     tag: "Featured",
-    title: "Publisher Ad Configuration Platform",
+    title: "AI Conversational Assistant",
     description:
-      "Centralized ad configuration management platform standardizing monetization implementation across 8 repositories for The Economic Times.",
-    stack: ["Next.js", "React.js", "Node.js", "GAM/DFP"],
-    role: "Tech Lead – Sole Technical Owner",
-    impact: "Cut integration time for new properties and standardized ad implementation across flagship products.",
+      "End-to-end AI conversational app using Next.js/React.js and locally hosted Ollama LLMs, with streaming responses and conversation memory.",
+    stack: ["Next.js", "FastAPI", "Ollama", "LLM"],
+    role: "Personal / Self-Driven",
+    impact: "Real-time streaming chat with an LLM provider abstraction layer and configurable system prompts.",
   },
   {
     tag: "Featured",
-    title: "ET Ad Management Panel",
+    title: "RAG-Based Document Intelligence",
     description:
-      "Self-serve admin panel giving business teams control over configurable ad placements and monetization rules.",
+      "Retrieval-Augmented Generation app for question answering over PDFs, with embeddings, vector search, and grounded, cited answers.",
+    stack: ["Next.js", "Python", "ChromaDB", "RAG"],
+    role: "Personal / Self-Driven",
+    impact: "Grounded responses with source citations (document, page, snippet) and reduced hallucinations.",
+  },
+  {
+    tag: "Featured",
+    title: "AI Personalized News Intelligence Platform",
+    description:
+      "GenAI platform delivering personalized, topic-aware news feeds with embeddings, semantic search, and LLM-powered article summaries.",
+    stack: ["Next.js", "FastAPI", "Embeddings", "Ollama"],
+    role: "Personal / Self-Driven",
+    impact: "Personalized recommendations and concise summaries with private, local LLM inference.",
+  },
+  {
+    tag: "Featured",
+    title: "Centralized Configuration Management Platform",
+    description:
+      "Configuration management platform standardizing implementation patterns across 8 repositories at The Economic Times.",
     stack: ["Next.js", "React.js", "Node.js"],
     role: "Tech Lead",
-    impact: "Removed engineering dependency for day-to-day ad configuration changes.",
+    impact: "Cut integration time for new properties and standardized patterns across flagship products.",
   },
   {
     tag: "Project",
-    title: "IPO Management Panel",
-    description: "Internal panel for managing IPO-related content and data across Economic Times properties.",
-    stack: ["Next.js", "React.js"],
-    role: "Tech Lead",
-    impact: "Streamlined business-team publishing workflows for time-sensitive IPO content.",
-  },
-  {
-    tag: "Project",
-    title: "Subscription Management Panel",
-    description: "Admin tool for configuring and managing subscription data and access rules.",
+    title: "Internal Admin Panels",
+    description:
+      "Management and subscription admin panels giving business teams self-serve control over configurable content and data.",
     stack: ["Next.js", "React.js", "Node.js"],
     role: "Tech Lead",
-    impact: "Gave business teams self-serve control over subscription configuration.",
+    impact: "Removed engineering dependency for day-to-day content and subscription changes.",
   },
   {
     tag: "Project",
@@ -163,20 +185,50 @@ export const projects = [
 
 export const caseStudies = [
   {
-    title: "Publisher Monetization Ecosystem",
+    title: "RAG-Based Document Intelligence Application",
     problem:
-      "Ad implementation across Desktop Web, Mobile Web, and AMP was inconsistent, slow to extend to new properties, and lacked a single technical owner.",
+      "Extracting reliable answers from large PDF documents is slow and error-prone, and general LLMs hallucinate without grounding in the source material.",
     solution:
-      "Took sole technical ownership of the monetization stack and built a centralized ad configuration platform deployed across 8 repositories using Next.js, React.js, and Node.js.",
-    stack: ["Next.js", "React.js", "Node.js", "GAM/DFP", "Prebid.js", "APS"],
-    role: "Tech Lead – Sole Technical Owner",
+      "Built an end-to-end RAG pipeline — PDF extraction, text chunking, embeddings, and ChromaDB vector storage — with semantic retrieval and grounded prompting, served through FastAPI and Ollama.",
+    stack: ["Next.js", "Python", "FastAPI", "ChromaDB", "Ollama", "RAG"],
+    role: "Personal / Self-Driven",
     features: [
-      "Header Bidding via Prebid.js and APS",
-      "Centralized ad configuration platform",
-      "Cross-property standardization",
-      "Desktop, Mobile Web, and AMP support",
+      "PDF extraction and text chunking",
+      "Embedding generation with ChromaDB vector search",
+      "Grounded prompting to reduce hallucinations",
+      "Source citations with document, page, and snippet",
     ],
-    impact: "Sustained monetization for 340M+ monthly views and 90-110M monthly visits with faster rollout to new properties.",
+    impact: "Accurate, cited answers grounded in document context, with local streaming inference via Ollama and FastAPI.",
+  },
+  {
+    title: "AI Conversational Assistant",
+    problem: "Building a real-time conversational AI that maintains context across turns without being locked to a single LLM provider.",
+    solution:
+      "Built a streaming chat application on Next.js/React.js with a FastAPI/Node.js backend, conversation memory, and an LLM provider abstraction layer.",
+    stack: ["Next.js", "React.js", "FastAPI", "Node.js", "Ollama", "LLM"],
+    role: "Personal / Self-Driven",
+    features: [
+      "Streaming AI responses",
+      "Conversation memory across interactions",
+      "LLM provider abstraction layer",
+      "Configurable system-prompt management",
+    ],
+    impact: "A responsive, provider-agnostic conversational experience running on locally hosted Ollama models.",
+  },
+  {
+    title: "Centralized Configuration Management Platform",
+    problem: "Implementation patterns were inconsistent across properties and slow to extend to new repositories, lacking a single standard.",
+    solution:
+      "Designed and built a centralized configuration management platform (Next.js, React.js, Node.js) deployed across 8 repositories to standardize implementation.",
+    stack: ["Next.js", "React.js", "Node.js"],
+    role: "Tech Lead",
+    features: [
+      "Centralized configuration management",
+      "Cross-repository standardization",
+      "Self-serve business tooling",
+      "Reusable implementation patterns",
+    ],
+    impact: "Standardized implementation across 8 repositories and cut integration time for new properties.",
   },
   {
     title: "Legacy XSLT to Next.js Migration",
@@ -192,29 +244,6 @@ export const caseStudies = [
     ],
     impact: "Measurable Core Web Vitals gains and a more maintainable codebase across flagship products.",
   },
-  {
-    title: "Self-Serve Business Admin Panels",
-    problem: "Business teams depended on engineering for routine ad, IPO, and subscription configuration changes.",
-    solution: "Built the ET Ad Management Panel, IPO Management Panel, and Subscription Management Panel using Next.js and React.js.",
-    stack: ["Next.js", "React.js", "Node.js"],
-    role: "Tech Lead",
-    features: [
-      "Self-serve configuration UI",
-      "Role-based access",
-      "Real-time updates to production ad rules",
-      "Subscription data management",
-    ],
-    impact: "Reduced engineering turnaround for business-driven configuration changes across ad, IPO, and subscription workflows.",
-  },
-  {
-    title: "FedEx Print Online Enterprise Platform",
-    problem: "FedEx needed a scalable enterprise platform for document printing, customization, and order management.",
-    solution: "Built and enhanced the platform using React.js, JavaScript, CanJS, HTML5, CSS3, AJAX, and JSON.",
-    stack: ["React.js", "JavaScript", "CanJS", "AJAX"],
-    role: "Sr. Consultant",
-    features: ["Document customization workflows", "Order management", "Enterprise-scale printing pipeline"],
-    impact: "Delivered scalable printing and order management capabilities for a global enterprise customer.",
-  },
 ] as const;
 
 export const experience = [
@@ -224,11 +253,10 @@ export const experience = [
     role: "Tech Lead – Front End Development",
     location: "Noida, India",
     points: [
-      "Serve as sole technical owner of the publisher monetization stack supporting 340M+ monthly views and 90–110M monthly visits, architecting ad solutions across Desktop Web, Mobile Web, and AMP using GAM/DFP, Prebid.js, APS, and Header Bidding.",
-      "Designed and built a centralized ad configuration management platform (Next.js, React.js, Node.js) deployed across 8 repositories, standardizing ad implementation and cutting integration time for new properties.",
-      "Directed frontend architecture and large-scale migration initiatives to React.js, Next.js, and TypeScript, improving Core Web Vitals scores and overall application performance across flagship products.",
+      "Directed frontend architecture and led large-scale migration initiatives to React.js, Next.js, and TypeScript, improving Core Web Vitals scores and overall application performance across flagship products.",
       "Migrated legacy XSLT applications to modern Next.js architecture, improving accessibility, maintainability, and page performance.",
-      "Built and shipped the ET Ad Management Panel, IPO Management Panel, and Subscription Management Panel (Next.js, React.js), giving business teams self-serve control over configurable ads and subscription data.",
+      "Designed and built a centralized configuration management platform (Next.js, React.js, Node.js) deployed across 8 repositories, standardizing implementation patterns and cutting integration time for new properties.",
+      "Built and shipped multiple internal admin panels (Next.js, React.js) — including management and subscription tools — giving business teams self-serve control over configurable content and data.",
       "Mentored a team of frontend engineers, leading development for Economic Times Web and Mobile Web platforms and establishing engineering best practices.",
       "Integrated AI-assisted development tools (Claude, ChatGPT, Cursor, Codex) into team workflows, improving code review turnaround and production velocity.",
     ],
@@ -280,68 +308,51 @@ export const experience = [
       "Built scalable e-commerce solutions for PC Game Supply using PHP, MySQL, JavaScript, jQuery, and AJAX, including secure payment workflows and digital product delivery.",
     ],
   },
-  {
-    period: "Jan 2008 to Oct 2008",
-    company: "KLG SYSTEL LTD",
-    role: "Software Programmer",
-    location: "Gurgaon, India",
-    points: [
-      "Developed enterprise web applications for Isha Foundation, including a contact management system and an online event registration portal, using PHP, MySQL, JavaScript, and AJAX.",
-    ],
-  },
-  {
-    period: "Apr 2007 to Jan 2008",
-    company: "H114 Technologies",
-    role: "Developer",
-    location: "India",
-    points: [
-      "Built a recruitment management portal using PHP, MySQL, JavaScript, and AJAX for managing job openings and candidate resumes.",
-    ],
-  },
 ] as const;
 
 export const aiWorkflow = [
+  "Built self-driven GenAI applications: a streaming conversational assistant and a RAG document-intelligence app.",
   "ChatGPT and Claude for architecture planning, debugging, and technical documentation.",
   "Cursor and Codex for code generation, refactoring, and faster implementation.",
   "AI-assisted code review integrated into team workflows, improving turnaround and production velocity.",
   "Mentors engineers on integrating AI tools responsibly into day-to-day development.",
-  "Actively expanding skills in Python, AI tooling, and automation.",
+  "Actively expanding skills in Python, GenAI tooling, and automation.",
 ] as const;
 
 export const blogPosts = [
   {
-    tag: "Ad Tech",
-    title: "Header Bidding with Prebid.js and GAM: A Practical Guide",
-    excerpt: "Setting up Prebid.js alongside Google Ad Manager for header bidding, yield management, and demand partner integration.",
+    tag: "RAG",
+    title: "Building a RAG Document Intelligence App with ChromaDB and Ollama",
+    excerpt: "PDF extraction, chunking, embeddings, and grounded prompting for accurate, cited answers over your own documents.",
+  },
+  {
+    tag: "LLM",
+    title: "Streaming Responses and Conversation Memory in a Next.js AI App",
+    excerpt: "Designing a real-time conversational assistant with an LLM provider abstraction layer and configurable system prompts.",
   },
   {
     tag: "Next.js",
     title: "Migrating Legacy XSLT to Next.js at Scale",
-    excerpt: "Lessons from migrating high-traffic publisher pages to Next.js without sacrificing SEO or Core Web Vitals.",
+    excerpt: "Lessons from migrating high-traffic pages to Next.js without sacrificing SEO or Core Web Vitals.",
   },
   {
     tag: "Performance",
-    title: "Core Web Vitals for High-Traffic Publisher Sites",
-    excerpt: "Practical techniques for improving LCP, INP, and CLS on ad-heavy, content-dense pages.",
+    title: "Core Web Vitals for High-Traffic Content Sites",
+    excerpt: "Practical techniques for improving LCP, INP, and CLS on content-dense pages.",
   },
   {
     tag: "AI Workflow",
     title: "Using Claude, ChatGPT, Cursor, and Codex in a Production Team",
     excerpt: "How AI-assisted development tools fit into a disciplined, review-driven engineering workflow.",
   },
-  {
-    tag: "Architecture",
-    title: "Building a Centralized Ad Configuration Platform",
-    excerpt: "Design decisions behind standardizing ad implementation across 8 repositories and multiple properties.",
-  },
 ] as const;
 
 export const resumeStats = [
   { value: "15+", label: "Years Experience" },
-  { value: "340M+", label: "Monthly Views" },
   { value: "90-110M", label: "Monthly Visits" },
-  { value: "8", label: "Repos Standardized" },
-  { value: "7+", label: "Yrs Ad Tech Ownership" },
+  { value: "4", label: "AI Dev Tools" },
+  { value: "3", label: "GenAI Projects" },
+  { value: "6", label: "Companies" },
 ] as const;
 
 export const resumeSkillGroups = [
@@ -357,23 +368,25 @@ export const resumeSkillGroups = [
       "CSS3",
       "jQuery",
       "Responsive Design",
+      "Figma",
+      "Pixel-perfect Design",
     ],
   },
   {
     title: "Backend / API",
-    skills: ["Node.js", "REST APIs", "JWT Authentication", "Axios", "JSON", "MongoDB"],
+    skills: ["Node.js", "REST APIs", "JWT Authentication", "Axios", "JSON", "MongoDB", "Python", "FastAPI", "Basics of Java"],
   },
   {
-    title: "Ad Tech / Monetization",
+    title: "GenAI / AI Engineering",
     skills: [
-      "Google Ad Manager (GAM/DFP)",
-      "Prebid.js",
-      "Amazon Publisher Services (APS)",
-      "Header Bidding",
-      "Taboola",
-      "VDO.AI",
-      "Magnite",
-      "Columbia Ad Platform",
+      "LLM Integration",
+      "RAG (Retrieval-Augmented Generation)",
+      "Ollama",
+      "ChromaDB",
+      "Embeddings",
+      "Prompt Engineering",
+      "Streaming Responses",
+      "Vector Search",
     ],
   },
   {
@@ -381,8 +394,8 @@ export const resumeSkillGroups = [
     skills: ["Core Web Vitals", "Lighthouse", "Google Search Console", "Chrome DevTools", "Server-Side Rendering (SSR)"],
   },
   {
-    title: "Cloud & DevOps / Build Tools",
-    skills: ["AWS (S3)", "Linode (Akamai Cloud)", "Git", "GitHub", "Bitbucket", "Jenkins", "Webpack", "Babel", "NPM", "Yarn"],
+    title: "Cloud & DevOps",
+    skills: ["AWS", "Linode (Akamai Cloud)", "Git", "GitHub", "Bitbucket", "Jenkins"],
   },
   {
     title: "AI-Assisted Development",
@@ -406,16 +419,16 @@ export const education = [
 export const additionalStrengths = [
   "Excellent debugging and problem-solving skills; quick learner with a strong work ethic.",
   "Strong mentorship track record, committed to deadlines and delivery quality.",
-  "Actively expanding skills in Python, AI tooling, and automation.",
+  "Actively expanding skills in Python, GenAI tooling, and automation.",
 ] as const;
 
 export const heroPages = {
   about: {
     eyebrow: "Immediate Joiner",
     title: "About Priyabrata",
-    subtitle: "Frontend Tech Lead specializing in Ad Tech, monetization, and large-scale Next.js migrations",
+    subtitle: "Frontend Architect and AI Engineer specializing in scalable React/Next.js systems and GenAI applications",
     copy:
-      "7+ years as sole technical owner of a publisher monetization ecosystem at The Economic Times, with 15+ years overall building scalable frontend systems across enterprise, banking, and consumer platforms.",
+      "15+ years building scalable frontend systems across media, banking, ecommerce, and enterprise platforms — now building end-to-end GenAI applications with LLM integration and RAG pipelines.",
     actions: [
       { href: profile.resumeFile, label: "Download Resume", primary: true },
       { href: "/contact", label: "Let's Connect", primary: false },
@@ -424,32 +437,32 @@ export const heroPages = {
   work: {
     eyebrow: "Immediate Joiner",
     title: "Projects",
-    subtitle: "Ad tech platforms, publisher tools, and large-scale frontend migrations",
-    copy: "Selected work across publisher monetization, business admin tools, enterprise platforms, and Next.js migrations.",
+    subtitle: "GenAI applications, publisher tools, and large-scale frontend migrations",
+    copy: "Selected work across GenAI apps, business admin tools, enterprise platforms, and Next.js migrations.",
     actions: [],
   },
   blog: {
     eyebrow: undefined,
     title: "Blog",
-    subtitle: "Ad tech, performance, and AI-assisted engineering topics",
-    copy: "Article ideas drawn from real work in header bidding, Next.js migrations, Core Web Vitals, and AI-assisted development.",
+    subtitle: "GenAI, performance, and AI-assisted engineering topics",
+    copy: "Article ideas drawn from real work in RAG, LLM apps, Next.js migrations, Core Web Vitals, and AI-assisted development.",
     actions: [],
   },
   contact: {
     eyebrow: "Immediate Joiner",
     title: "Contact",
-    subtitle: "Immediate Joiner available for Staff/Lead frontend and ad tech roles",
+    subtitle: "Immediate Joiner available for Staff/Lead frontend and AI engineering roles",
     copy:
-      "Reach out for Staff Software Engineer, Frontend Tech Lead, Senior Frontend Engineer, Ad Tech, or Monetization-focused roles, consulting, or product collaboration.",
+      "Reach out for Staff Frontend Engineer, Frontend Architect, Full-Stack Developer, or AI Engineer roles, consulting, or product collaboration.",
     actions: [],
   },
   resume: {
     eyebrow: "Resume | Immediate Joiner",
     title: "Priyabrata Bera",
-    resumeTitle: "Staff Software Engineer | Frontend Tech Lead | Ad Tech & Monetization Specialist",
-    subtitle: "React.js · Next.js · TypeScript · Node.js · Ad Tech",
+    resumeTitle: "Staff Frontend Engineer | Frontend Architect | Full-Stack Developer | AI Engineer",
+    subtitle: "React.js · Next.js · TypeScript · Node.js · Python · GenAI",
     copy:
-      "Immediate Joiner with 15+ years of experience architecting scalable frontend applications, and 7+ years as sole technical owner of a publisher monetization ecosystem serving 340M+ monthly views.",
+      "Immediate Joiner with 15+ years architecting scalable frontend applications, now building end-to-end GenAI applications with LLM integration and RAG pipelines.",
     actions: [
       { href: profile.resumeFile, label: "Download Resume", primary: true },
       { href: "/contact", label: "Contact Me", primary: false },

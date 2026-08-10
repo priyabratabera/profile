@@ -57,7 +57,7 @@ export default function ResumePage() {
 
       <Experience
         eyebrow="Work Experience"
-        title="Professional experience across ad tech, enterprise, and consumer platforms"
+        title="Professional experience across media, enterprise, banking, and consumer platforms"
       />
 
       <Section id="major-projects">
