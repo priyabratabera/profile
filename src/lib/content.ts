@@ -39,7 +39,7 @@ export const socialLinks = [
 
 export const heroStats = [
   { value: "15+", label: "Years Experience" },
-  { value: "90-110M", label: "Monthly Visits" },
+  { value: "Core Web Vitals", label: "Performance Optimization" },
   { value: "4", label: "AI Dev Tools" },
   { value: "3", label: "GenAI Projects" },
 ] as const;
@@ -349,7 +349,7 @@ export const blogPosts = [
 
 export const resumeStats = [
   { value: "15+", label: "Years Experience" },
-  { value: "90-110M", label: "Monthly Visits" },
+  { value: "Core Web Vitals", label: "Performance Optimization" },
   { value: "4", label: "AI Dev Tools" },
   { value: "3", label: "GenAI Projects" },
   { value: "6", label: "Companies" },
