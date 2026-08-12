@@ -5,6 +5,7 @@ import { ContactForm } from "@/components/ContactForm";
 const details = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
   { label: "Phone", value: profile.phoneDisplay, href: `tel:${profile.phoneTel}` },
+  { label: "WhatsApp", value: profile.phoneDisplay, href: profile.whatsapp },
   { label: "LinkedIn", value: profile.linkedin, href: profile.linkedin },
   { label: "GitHub", value: profile.github, href: profile.github },
 ];
