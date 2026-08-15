@@ -7,7 +7,7 @@ export function Sidebar() {
   return (
     <aside className="lg:sticky lg:top-24 lg:h-fit lg:w-[300px] lg:shrink-0">
       <Surface className="flex flex-col items-center gap-4 p-6 text-center">
-        <div className="relative h-28 w-28 overflow-hidden rounded-full border-4 border-white shadow-lg">
+        <div className="relative h-28 w-28 overflow-hidden rounded-full border-4 border-surface-strong shadow-lg">
           <Image
             src="/assets/pic.png"
             alt={profile.photoAlt}
@@ -33,7 +33,7 @@ export function Sidebar() {
                 aria-label={link.label}
                 target={link.href.startsWith("http") ? "_blank" : undefined}
                 rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-white text-ink/70 transition hover:border-brand hover:text-brand"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-border bg-surface-strong text-ink/70 transition hover:border-brand hover:text-brand"
               >
                 <Icon size={14} />
               </a>

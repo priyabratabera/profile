@@ -24,7 +24,7 @@ export function Hero() {
         {heroStats.map((stat) => (
           <article
             key={stat.label}
-            className="rounded-2xl border border-border bg-white/70 p-4 text-center"
+            className="rounded-2xl border border-border bg-surface-strong/70 p-4 text-center"
           >
             <strong className="block text-xl font-bold text-brand sm:text-2xl">
               {stat.value}

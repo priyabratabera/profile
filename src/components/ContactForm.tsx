@@ -11,7 +11,7 @@ export function ContactForm() {
   }
 
   const fieldClasses =
-    "mt-1 w-full rounded-xl border border-border bg-white px-3 py-2 text-sm outline-none transition focus:border-brand";
+    "mt-1 w-full rounded-xl border border-border bg-surface-strong px-3 py-2 text-sm outline-none transition focus:border-brand";
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">

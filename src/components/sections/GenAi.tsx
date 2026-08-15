@@ -13,7 +13,7 @@ export function GenAi() {
 
         <div className="mt-6 grid gap-4 lg:grid-cols-2">
           {genAi.projects.map((project) => (
-            <article key={project.title} className="rounded-2xl border border-border bg-white/60 p-5">
+            <article key={project.title} className="rounded-2xl border border-border bg-surface-strong/60 p-5">
               <h3 className="text-base font-semibold">{project.title}</h3>
               <div className="mt-3 flex flex-wrap gap-2">
                 {project.stack.map((tech) => (

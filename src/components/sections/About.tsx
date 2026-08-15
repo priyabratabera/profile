@@ -12,7 +12,7 @@ export function About() {
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           {aboutHighlights.map((point) => (
-            <article key={point} className="flex gap-3 rounded-2xl border border-border bg-white/60 p-4">
+            <article key={point} className="flex gap-3 rounded-2xl border border-border bg-surface-strong/60 p-4">
               <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
               <p className="text-sm text-ink/85">{point}</p>
             </article>

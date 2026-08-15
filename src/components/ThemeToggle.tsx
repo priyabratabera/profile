@@ -1,0 +1,30 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { FaMoon, FaSun } from "@/components/icons";
+
+export function ThemeToggle() {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    setIsDark(document.documentElement.classList.contains("dark"));
+  }, []);
+
+  const toggle = () => {
+    const next = !isDark;
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
+    setIsDark(next);
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={toggle}
+      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-ink/80 transition hover:border-brand hover:text-brand"
+    >
+      {isDark ? <FaSun size={16} /> : <FaMoon size={16} />}
+    </button>
+  );
+}

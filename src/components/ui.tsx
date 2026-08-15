@@ -48,7 +48,7 @@ export function SectionHeading({
 
 export function Chip({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-border bg-white/70 px-3 py-1 text-xs font-medium text-ink/80">
+    <span className="inline-flex items-center rounded-full border border-border bg-surface-strong/70 px-3 py-1 text-xs font-medium text-ink/80">
       {children}
     </span>
   );
@@ -70,7 +70,7 @@ export function Btn({
   const styles =
     variant === "primary"
       ? "bg-brand text-white shadow-[0_10px_25px_rgb(15,118,110,0.35)] hover:bg-brand-dark"
-      : "border border-border bg-white/70 text-ink hover:bg-white";
+      : "border border-border bg-surface-strong/70 text-ink hover:bg-surface-strong";
   const external = href.startsWith("http") || download;
   return (
     <Link
