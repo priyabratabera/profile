@@ -27,6 +27,7 @@ export const navLinks = [
   { href: "/work", label: "Projects" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+  { href: "/map", label: "Map" },
 ] as const;
 
 export const socialLinks = [
@@ -468,5 +469,12 @@ export const heroPages = {
       { href: "/contact", label: "Contact Me", primary: false },
       { href: "/work", label: "View Projects", primary: false },
     ],
+  },
+  map: {
+    eyebrow: undefined,
+    title: "Map",
+    subtitle: `Based in ${profile.location}`,
+    copy: "Find my location on the map below, or reach out via the contact page to connect.",
+    actions: [],
   },
 } as const;
