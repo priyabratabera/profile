@@ -24,7 +24,7 @@ export function TopBar() {
           </span>
         </Link>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           <nav className="hidden items-center gap-6 md:flex">
             {navLinks.map((link) => {
               const active = pathname === link.href;
