@@ -15,7 +15,7 @@ export function TopBar() {
     <header className="sticky top-0 z-50 border-b border-border bg-surface-strong/80 backdrop-blur">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">
             {profile.initials}
           </span>
           <span className="flex flex-col leading-tight">
