@@ -14,7 +14,7 @@ export function Contact() {
   return (
     <Section id="contact">
       <SectionHeading eyebrow="Contact" title="Let's build your next frontend product" />
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Surface className="p-6">
           <p className="text-sm text-muted">
             Immediate Joiner available for Staff Frontend Engineer, Frontend Architect,

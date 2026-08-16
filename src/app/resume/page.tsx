@@ -108,7 +108,7 @@ export default function ResumePage() {
       <Section id="resume-contact">
         <SectionHeading eyebrow="Contact" title="Professional contact details" />
         <Surface className="p-6">
-          <dl className="grid gap-3 text-sm sm:grid-cols-2">
+          <dl className="grid grid-cols-1 gap-3 text-sm sm:grid-cols-2">
             <div className="flex justify-between gap-2">
               <dt className="text-muted">Email</dt>
               <dd>
