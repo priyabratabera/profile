@@ -8,6 +8,7 @@ export function ThemeToggle() {
 
   useEffect(() => {
     setIsDark(document.documentElement.classList.contains("dark"));
+    document.documentElement.dataset.themeReady = "true";
   }, []);
 
   const toggle = () => {
@@ -19,6 +20,7 @@ export function ThemeToggle() {
 
   return (
     <button
+      id="theme-toggle"
       type="button"
       onClick={toggle}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
