@@ -20,7 +20,7 @@ export function Hero() {
         </Btn>
       </div>
 
-      <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {heroStats.map((stat) => (
           <article
             key={stat.label}
