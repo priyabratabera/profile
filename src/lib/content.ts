@@ -1,7 +1,7 @@
 export const profile = {
   name: "Priyabrata Bera",
   initials: "PB",
-  title: "Staff Frontend Engineer | Frontend Architect | AI Engineer",
+  title: "Staff Frontend Engineer | Frontend Architect | Full-Stack Developer | AI Engineer",
   tagline: "React.js · Next.js · JavaScript · TypeScript · Tailwind CSS · Node.js · REST API · Python · FastAPI · GenAI · RAG · LLM",
   summary:
     "Frontend Architect and Tech Lead with 15+ years building scalable, high-performance web applications across media, banking, ecommerce, and enterprise platforms — now building end-to-end GenAI applications with LLM integration and RAG pipelines.",
