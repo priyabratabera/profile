@@ -75,3 +75,16 @@ h4 {
   box-shadow: var(--portfolio-shadow);
   backdrop-filter: blur(6px);
 }
+
+.ext .ext-sensitive {
+  filter: blur(5px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.ext .ext-resume-btn {
+  opacity: 0.5;
+  filter: grayscale(1);
+  pointer-events: none;
+  cursor: not-allowed;
+}

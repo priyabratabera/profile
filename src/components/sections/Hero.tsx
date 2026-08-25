@@ -12,7 +12,7 @@ export function Hero() {
       <p className="mt-3 max-w-2xl text-muted">{profile.summary}</p>
 
       <div className="mt-6 flex flex-wrap gap-3">
-        <Btn href={profile.resumeFile} variant="primary" download>
+        <Btn href={profile.resumeFile} variant="primary" download className="ext-resume-btn">
           Download Resume
         </Btn>
         <Btn href="/contact" variant="secondary">

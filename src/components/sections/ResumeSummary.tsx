@@ -16,7 +16,7 @@ export function ResumeSummary() {
           <h3 className="font-semibold">Professional Summary</h3>
           <p className="mt-2 text-sm text-muted">{professionalSummary}</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Btn href={profile.resumeFile} variant="primary" download>
+            <Btn href={profile.resumeFile} variant="primary" download className="ext-resume-btn">
               Download Resume
             </Btn>
             <Btn href="/contact" variant="secondary">

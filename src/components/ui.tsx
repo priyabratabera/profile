@@ -59,11 +59,13 @@ export function Btn({
   children,
   variant = "primary",
   download,
+  className = "",
 }: {
   href: string;
   children: ReactNode;
   variant?: "primary" | "secondary";
   download?: boolean;
+  className?: string;
 }) {
   const base =
     "inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition";
@@ -75,7 +77,7 @@ export function Btn({
   return (
     <Link
       href={href}
-      className={`${base} ${styles}`}
+      className={`${base} ${styles} ${className}`}
       {...(download ? { download: true } : {})}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
     >

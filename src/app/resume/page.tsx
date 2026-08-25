@@ -112,7 +112,7 @@ export default function ResumePage() {
             <div className="flex justify-between gap-2">
               <dt className="text-muted">Email</dt>
               <dd>
-                <a href={`mailto:${profile.email}`} className="font-medium hover:text-brand">
+                <a href={`mailto:${profile.email}`} className="ext-sensitive font-medium hover:text-brand">
                   {profile.email}
                 </a>
               </dd>
@@ -120,7 +120,7 @@ export default function ResumePage() {
             <div className="flex justify-between gap-2">
               <dt className="text-muted">Phone</dt>
               <dd>
-                <a href={`tel:${profile.phoneTel}`} className="font-medium hover:text-brand">
+                <a href={`tel:${profile.phoneTel}`} className="ext-sensitive font-medium hover:text-brand">
                   {profile.phoneDisplay}
                 </a>
               </dd>
@@ -143,7 +143,7 @@ export default function ResumePage() {
             </div>
           </dl>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Btn href={profile.resumeFile} variant="primary" download>
+            <Btn href={profile.resumeFile} variant="primary" download className="ext-resume-btn">
               Download Resume
             </Btn>
             <Btn href="/contact" variant="secondary">

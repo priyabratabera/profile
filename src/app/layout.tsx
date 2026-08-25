@@ -37,7 +37,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){document.documentElement.classList.add('dark');try{if(localStorage.getItem('theme')==='light'){document.documentElement.classList.remove('dark');}}catch(e){}document.addEventListener('click',function(e){if(document.documentElement.dataset.themeReady)return;var btn=e.target&&e.target.closest?e.target.closest('#theme-toggle'):null;if(!btn)return;var isDark=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',isDark?'dark':'light');}catch(err){}btn.setAttribute('aria-label',isDark?'Switch to light mode':'Switch to dark mode');});})();`,
+            __html: `(function(){document.documentElement.classList.add('dark');try{if(localStorage.getItem('theme')==='light'){document.documentElement.classList.remove('dark');}}catch(e){}document.addEventListener('click',function(e){if(document.documentElement.dataset.themeReady)return;var btn=e.target&&e.target.closest?e.target.closest('#theme-toggle'):null;if(!btn)return;var isDark=document.documentElement.classList.toggle('dark');try{localStorage.setItem('theme',isDark?'dark':'light');}catch(err){}btn.setAttribute('aria-label',isDark?'Switch to light mode':'Switch to dark mode');});try{var p=new URLSearchParams(location.search);if(p.get('ext')==='1'){sessionStorage.setItem('ext','1');}if(sessionStorage.getItem('ext')==='1'){document.documentElement.classList.add('ext');}}catch(e){}})();`,
           }}
         />
         <TopBar />

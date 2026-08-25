@@ -44,13 +44,13 @@ export function Sidebar() {
         <div className="w-full space-y-2 rounded-2xl bg-bg/60 p-4 text-left text-sm">
           <div className="flex justify-between gap-2">
             <span className="text-muted">Email</span>
-            <a href={`mailto:${profile.email}`} className="font-medium text-ink hover:text-brand">
+            <a href={`mailto:${profile.email}`} className="ext-sensitive font-medium text-ink hover:text-brand">
               {profile.email}
             </a>
           </div>
           <div className="flex justify-between gap-2">
             <span className="text-muted">Phone</span>
-            <a href={`tel:${profile.phoneTel}`} className="font-medium text-ink hover:text-brand">
+            <a href={`tel:${profile.phoneTel}`} className="ext-sensitive font-medium text-ink hover:text-brand">
               {profile.phoneDisplay}
             </a>
           </div>
@@ -60,7 +60,7 @@ export function Sidebar() {
           </div>
         </div>
 
-        <Btn href={profile.resumeFile} variant="primary" download>
+        <Btn href={profile.resumeFile} variant="primary" download className="ext-resume-btn">
           Download Resume
         </Btn>
       </Surface>
